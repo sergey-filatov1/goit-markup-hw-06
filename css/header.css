@@ -79,3 +79,86 @@
 .contacts-link:focus {
   color: #404bbf;
 }
+
+.menu-open-btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-open-icon {
+  fill: currentColor;
+}
+
+.nav-list,
+.contacts {
+  display: none;
+}
+
+.header-logo {
+  margin-right: 0;
+  padding: 16px 0;
+}
+
+.header-container {
+  min-height: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .contacts {
+    display: block;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+    padding: 24px 0;
+  }
+
+  .nav-link {
+    padding: 24px 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}

@@ -1,7 +1,7 @@
 .main-banner {
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 188px 0;
+  padding: 72px 0;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/hero-bg.jpg");
@@ -10,13 +10,12 @@
   background-size: cover;
 }
 
-h1 {
-  max-width: 496px;
-  margin: 0 auto 48px;
-
+.main-title {
+  max-width: 216px;
+  margin: 0 auto 72px;
+  font-size: 36px;
+  line-height: 1.11;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
@@ -47,4 +46,42 @@ h1 {
 .main-button:hover,
 .main-button:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .main-banner {
+    max-width: 768px;
+    padding: 112px 0;
+  }
+
+  .main-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .main-banner {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .main-title {
+    max-width: 496px;
+    margin-bottom: 48px;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .main-banner {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url("../images/hero-bg@2x.jpg");
+  }
 }
